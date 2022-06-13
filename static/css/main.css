@@ -1,0 +1,151 @@
+
+
+/*
+    Main containers
+ */
+
+.p1 {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.d1 {
+    padding: 30px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+
+    background-color: #E5E5E5;
+}
+
+.d2 {
+    padding-top: 20px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-content: center;
+}
+
+.d2_2 {
+    height: inherit;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-content: center;
+
+    gap: 15px;
+}
+
+/*
+    Items:
+ */
+
+.cover {
+    max-width: 80%;
+    align-self: center
+}
+
+.pad-100 {
+    padding: 100px;
+}
+
+.selected {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span {
+    color: gray;
+}
+
+.d2_2 button {
+    align-items: unset;
+}
+
+.d2_2 article{
+    align-self: flex-start;
+}
+
+/*
+    Bootstrap elements' customizing
+ */
+
+
+.btn-primary {
+    background-color: #008F91;
+    border-color: #008F91;
+}
+
+.btn-secondary {
+    background-color: #19181B;
+    border-color: #19181B;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.active {
+    background: #30adad;
+    color: #ffffff;
+    border-color: #00aaa8;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary.active {
+    background: #2c2c2c;
+    color: #ffffff;
+    border-color: #2c2c2c;
+}
+
+.btn-link {
+    color: #2c2c2c;
+}
+
+.btn-light {
+    background-color: unset;
+    border-color: #D2D4D9;
+}
+
+
+.form-group-icon {
+    position: relative;
+}
+
+.form-group-icon input {
+    padding-left: 30px;
+}
+
+.form-group-icon i {
+    position: absolute;
+    color: gray;
+    left: 5px;
+    bottom: 9px;
+}
+
+#showPassword, #showPassword2 {
+    position: absolute;
+    color: gray;
+    border: none;
+    background: none;
+    right: 15px;
+    bottom: 9px;
+}
+
+.input-group select {
+    color: gray;
+}
+

@@ -1,0 +1,17 @@
+.s {
+    background-color: #2c2c2c;
+    padding: 10px 30px;
+    height: 100%;
+    width: 25%; /* TODO: change */
+
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: .4s ease;
+}
+
+.logo img {
+    width: 45%;
+}

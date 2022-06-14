@@ -1,12 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
+/*
+    Media
+ */
+
+@media all and (max-width: 600px) {
+
+    body {zoom: 80%;}
+
+}
+
+@media all and (max-width: 400px) {
+
+    body {zoom: 65%;}
+
+}
 
 /*
     Main containers
  */
 
+
+body {
+    font-family: 'Ubuntu';
+}
+
 .p1 {
     height: 100%;
-    width: 50%;
+    width: 45%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+}
+
+.p2 {
+    height: 100%;
+    width: 55%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -56,8 +86,25 @@
     align-self: center
 }
 
+.f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.f-end {
+    width: 100%;
+    align-self: center;
+
+    justify-content: flex-end;
+}
+
 .pad-100 {
-    padding: 100px;
+    padding: 100px 150px;
 }
 
 .selected {

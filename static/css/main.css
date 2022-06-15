@@ -96,11 +96,45 @@ body {
     flex-direction: row;
 }
 
-.f-end {
+.fj-st {
+    width: 100%;
+    align-self: center;
+
+    justify-content: flex-start;
+}
+
+.fj-cen {
+    width: 100%;
+    align-self: center;
+
+    justify-content: center;
+}
+
+.fj-end {
     width: 100%;
     align-self: center;
 
     justify-content: flex-end;
+}
+
+.fa-st {
+    width: 100%;
+    align-self: flex-start;
+
+}
+
+.fa-cen {
+    width: 100%;
+    align-self: center;
+
+    justify-content: center;
+}
+
+.fa-end {
+    width: 100%;
+    align-self: flex-end;
+
+    justify-content: center;
 }
 
 .pad-100 {
@@ -114,7 +148,7 @@ body {
 }
 
 span {
-    color: gray;
+    color: #8A8C99;
 }
 
 .d2_2 button {

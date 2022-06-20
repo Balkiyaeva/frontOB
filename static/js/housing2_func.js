@@ -1,4 +1,16 @@
+function dropdown(id) {
+    const element = document.getElementById(id);
 
+    const up = "url(../../static/img/chevron_up.svg)";
+    const right = "url(../../static/img/chev-right.svg)";
+
+
+    if (element.style.backgroundImage.toString().includes("chevron_up")){
+        element.style.backgroundImage = right;
+    } else {
+        element.style.backgroundImage = up;
+    }
+}
 function windowPopup(id) {
     const element = document.getElementById(id);
     const el_style = element.style;

@@ -334,6 +334,28 @@
     position: absolute;
     right: 10%;
 
+    text-align: center;
+
+}
+
+.dropdown-menu {
+    width: 100%;
+    background-color: #19181B;
+    color: white;
+}
+
+.dropdown-item {
+    text-align: left;
+    color: white;
+}
+
+/*.dropdown-menu a {*/
+/*    padding-left: 42px;*/
+/*}*/
+
+.dropdown-item:hover {
+    color: white;
+    background-color: #8A8C99;
 }
 /*
     window popup

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("http://fonts.googleapis.com/css?family=Ubuntu:regular,bold");
 
 /*
     Media
@@ -12,7 +12,7 @@
 
 @media all and (max-width: 400px) {
 
-    body {zoom: 65%;}
+    body {zoom: 40%;}
 
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 .pad-100 {
-    padding: 100px 150px;
+    padding: 100px 200px;
 }
 
 .selected {
@@ -159,10 +159,57 @@ span {
     align-self: flex-start;
 }
 
+.inp-48 {
+    height: 48px;
+}
+
+.h1-20 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.h1-18 {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.hr-ctext {
+    display: flex;
+    align-items: center;
+}
+.hr-ctext:before,
+.hr-ctext:after {
+    content: "";
+    flex-grow: 1;
+    background: #D2D4D9;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+}
+.hr-ctext:before {
+    margin-right: 26px;
+}
+
+.hr-ctext:after {
+    margin-left: 26px;
+}
+
 /*
     Bootstrap elements' customizing
  */
 
+.btn {
+    height: 48px;
+}
 
 .btn-primary {
     background-color: #008F91;
@@ -207,23 +254,31 @@ span {
 }
 
 .form-group-icon input {
-    padding-left: 30px;
+    padding-left: 36px;
 }
 
 .form-group-icon i {
     position: absolute;
     color: gray;
-    left: 5px;
-    bottom: 9px;
+    left: 14px;
+    bottom: 15px;
 }
 
-#showPassword, #showPassword2 {
+.form-group-icon i img {
+    height: 18px;
+}
+
+.showPassword {
     position: absolute;
     color: gray;
     border: none;
     background: none;
-    right: 15px;
-    bottom: 9px;
+    right: 8px;
+    bottom: 13px;
+}
+
+.showPassword img {
+    height: 16px;
 }
 
 .input-group select {

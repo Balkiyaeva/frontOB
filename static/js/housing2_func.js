@@ -4,11 +4,10 @@ function nav_left() {
     $(".m").toggleClass("m_width-93")
 
     $(".logo-w").toggleClass("logo-ws")
+    $(".chev-left").toggleClass("chev-right")
     $(".info").toggleClass("d-n")
 
     $('button', $('#left_menu_nav_container')).each(function () {
-        // console.log($(this));
-
         $(this).toggleClass("small")
         $(this).toggleClass("big")
 
@@ -25,14 +24,17 @@ function dropdown(id) {
     const up = "url(../../static/img/chevron_up.svg)";
     const right = "url(../../static/img/chev-right.svg)";
 
+    console.log(element.className)
 
-    if (element.style.backgroundImage().includes("none")){
-        return
-    } else if (element.style.backgroundImage.toString().includes("up")){
-        element.style.backgroundImage = right;
+
+    if (element.className.toString().includes("small")){
+        element.style.backgroundRepeat = "no-repeat"
+        element.style.backgroundImage = "none"
+    } else if (element.className.toString().includes("show")){
+        element.style.backgroundImage = up;
     }
     else {
-        element.style.backgroundImage = up;
+        element.style.backgroundImage = right;
     }
 }
 function windowPopup(id) {

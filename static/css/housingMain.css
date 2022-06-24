@@ -473,7 +473,8 @@
     visibility: hidden;
 }
 
-.arrow {
+.arrow,
+.arrow.popup.show{
     background-image: url(../../static/img/chev-right.svg);
     background-repeat: no-repeat;
     background-position-y: center;

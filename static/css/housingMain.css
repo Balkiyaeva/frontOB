@@ -437,7 +437,8 @@
     border-radius: 6px;
 }
 
-.small.arrow {
+.small.arrow,
+.small.arrow.show{
     background: none;
 }
 
@@ -484,6 +485,7 @@
 
 .arrow.show {
     background-image: url(../../static/img/chevron_up.svg);
+    background-repeat: no-repeat;
 }
 
 .popup {

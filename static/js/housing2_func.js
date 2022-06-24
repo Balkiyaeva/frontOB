@@ -18,25 +18,7 @@ function nav_left() {
 
     $(".more-info").toggleClass("d-y")
 }
-function dropdown(id) {
-    const element = document.getElementById(id);
 
-    const up = "url(../../static/img/chevron_up.svg)";
-    const right = "url(../../static/img/chev-right.svg)";
-
-    console.log(element.className)
-
-
-    if (element.className.toString().includes("small")){
-        element.style.backgroundRepeat = "no-repeat"
-        element.style.backgroundImage = "none"
-    } else if (element.className.toString().includes("show")){
-        element.style.backgroundImage = up;
-    }
-    else {
-        element.style.backgroundImage = right;
-    }
-}
 function windowPopup(id) {
     const element = document.getElementById(id);
     const el_style = element.style;

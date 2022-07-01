@@ -94,7 +94,7 @@
                     <div style="width: 100%" class="data-showcounter">
                         <label>Короткое наименование</label>
                         <input type="text" class="form-control" maxlength="20"  data-show-counter="true"><!-- TODO change id -->
-                        <span class="showcounter"></span>
+                        <span class="showcounter" style="top: 37%"></span>
                         <span class="fs-14">Например: ЖК “Ариа”</span>
                     </div>
                 </div>
@@ -488,7 +488,7 @@
 
             </article>
             <hr>
-            <article class="f-col" style="width: 100%; gap: 20px">
+            <article class="f-col">
                 <article>
                     <h1 class="h1-15">Выберите инжинерно-коммуникационную инфраструктуру объекта</h1>
                     <label for="btns-check">Выберите соответствующие пункты</label>
@@ -513,7 +513,6 @@
 
                     <input type="checkbox" class="btn-check" id="btn-check-6-outlined">
                     <label class="btn btn-light-outline inp-36 fs-15" for="btn-check-6-outlined">Электричество/лифт</label>
-
 
                 </div>
                 <div>
@@ -556,6 +555,117 @@
 
             </article>
             <hr>
+            <article class="f-col">
+                <h1 class="h1-15">Добавьте технические характеристики жилья</h1>
+
+                <div class="f-row" style="width: 100%; justify-content: space-between">
+                    <label style="width: 25%">Стены
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Потолки
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Межкомнатные перегородки
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Пол холла, кухни и комнат
+                        <input class="form-control" type="text">
+                    </label>
+                </div>
+
+                <div class="f-row" style="width: 100%; justify-content: space-between">
+                    <label style="width: 25%">Пол санузлов
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Санузлы
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Входные двери
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Водоснабжение
+                        <input class="form-control" type="text">
+                    </label>
+                </div>
+
+                <div class="f-row" style="width: 100%; justify-content: space-between">
+                    <label style="width: 25%">Водоотвод
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Окна
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Электроснабжение
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 25%">Горячее водоснабжение
+                        <input class="form-control" type="text">
+                    </label>
+                </div>
+
+                <div class="f-row" style="width: 100%; justify-content: space-between">
+                    <label style="width: 30%">Отопление
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 30%">Газоснабжение (при условии подведении)
+                        <input class="form-control" type="text">
+                    </label>
+
+                    <label style="width: 30%">Благоустройство территории
+                        <input class="form-control" type="text">
+                    </label>
+
+                </div>
+
+            </article>
+            <hr>
+            <article class="f-col">
+                <article>
+                    <h1 class="h1-15">Укажите дополнительную информацию по объекту</h1>
+                    <label for="NalPobSocRazvObj">Наличие поблизости социальных и развлекательных объектов</label>
+                </article>
+
+                <div class="f-row" id="NalPobSocRazvObj" style="flex-wrap: wrap; gap: 10px">
+                    <input type="checkbox" class="btn-check" id="Yasli">
+                    <label class="btn btn-light-outline inp-36 fs-15" for="Yasli">Детский сад/Ясли</label>
+
+                    <input type="checkbox" class="btn-check" id="Shkola" checked>
+                    <label class="btn btn-light-outline inp-36 fs-15" for="Shkola">Школа</label>
+
+                    <input type="checkbox" class="btn-check" id="TRC">
+                    <label class="btn btn-light-outline inp-36 fs-15" for="TRC">Торговый равлекательный центр</label>
+
+                    <input type="checkbox" class="btn-check" id="Supermarket">
+                    <label class="btn btn-light-outline inp-36 fs-15" for="Supermarket">Супермаркет</label>
+
+                </div>
+
+                <div class="f-row">
+                    <div class="data-showcounter" style="width: 90%; height: 100%">
+                        <label for="DopInput"> Прочее (дописать дополнительно)</label>
+                        <input id="DopInput" type="text" class="form-control inp-36" maxlength="50">
+                        <span class="showcounter" style="top: 50%"></span>
+                    </div>
+
+                    <button id="submit_DopInput" class="btn btn-light fs-15" style="background-color: white; width:10%; height: 36px; align-self: flex-end">Добавить</button>
+                </div>
+
+                <div id="div_DopInput" class="f-row" style="flex-wrap: wrap; gap: 10px">
+
+                </div>
+
+            </article>
+
             <div class="f-row fj-end" style="gap: 30px">
                 <button class="btn default big fs-15 inp-48">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -735,7 +845,25 @@
                 $(this).removeClass("invalid")
             }
         })
+
+        $("#submit_DopInput").on("click", function (){
+            const val = $("#DopInput").val()
+            $("#DopInput").val("")
+
+            const inp_label = $("<span class='btn btn-light-outline checked inp-36 fs-15'></span>").text(val)
+            const but = $("<button class='close-btn remove'></button>")
+
+            inp_label.append(but)
+            $("#div_DopInput").append(inp_label)
+
+        })
+        $(".remove").on("click", function (){
+            console.log($(this))
+            $(this).parentsUntil("div").remove()
+        })
     </script>
+<!--    <input type="checkbox" class="btn-check" id="Yasli">-->
+<!--    <label class="btn btn-light-outline inp-36 fs-15" for="Yasli">Детский сад/Ясли</label>-->
 
 </body>
 </html>

@@ -657,7 +657,7 @@
                         <span class="showcounter" style="top: 50%"></span>
                     </div>
 
-                    <button id="submit_DopInput" class="btn btn-light fs-15" style="background-color: white; width:10%; height: 36px; align-self: flex-end">Добавить</button>
+                    <button type="submit" id="submit_DopInput" class="btn btn-light fs-15" style="background-color: white; width:10%; height: 36px; align-self: flex-end">Добавить</button>
                 </div>
 
                 <div id="div_DopInput" class="f-row" style="flex-wrap: wrap; gap: 10px">
@@ -846,21 +846,22 @@
             }
         })
 
-        $("#submit_DopInput").on("click", function (){
+        $("#submit_DopInput").on("click submit", function (){
             const val = $("#DopInput").val()
             $("#DopInput").val("")
 
-            const inp_label = $("<span class='btn btn-light-outline checked inp-36 fs-15'></span>").text(val)
-            const but = $("<button class='close-btn remove'></button>")
+            const inp_label = $("<span class='btn-light-outline checked inp-36 fs-15'></span>").text(val)
+            const but = $("<button class='btn-close btn-close-white remove' onclick='remove(this)'></button>")
 
             inp_label.append(but)
             $("#div_DopInput").append(inp_label)
+        })
 
-        })
-        $(".remove").on("click", function (){
-            console.log($(this))
-            $(this).parentsUntil("div").remove()
-        })
+        function remove(th){
+            $(th).parentsUntil("div").remove()
+        }
+
+
     </script>
 <!--    <input type="checkbox" class="btn-check" id="Yasli">-->
 <!--    <label class="btn btn-light-outline inp-36 fs-15" for="Yasli">Детский сад/Ясли</label>-->

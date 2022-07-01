@@ -204,13 +204,6 @@ input[type=number]::-webkit-inner-spin-button {
     color: white;
 }
 
-.close-btn {
-    border: unset;
-    background: url(../../static/img/Icon-Outlined-Close.svg) center center no-repeat;
-    background-size: 24px 24px;
-    height: 100%;
-    width: 100%;
-}
 
 
 

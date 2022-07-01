@@ -204,7 +204,56 @@ input[type=number]::-webkit-inner-spin-button {
     color: white;
 }
 
+.dragNdrop {
+    position: relative;
 
+    width: 100%;
+}
+
+input[type="file"]{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    z-index: 2;
+
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    cursor: pointer;
+}
+
+.dragNdrop label {
+    width: 100%;
+    cursor: pointer;
+
+    background: #FFFFFF;
+    border: 1px dashed #D2D4D9;
+    border-radius: 8px;
+
+    padding: 5%;
+
+    z-index: 0;
+
+    font-size: 14px;
+
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dragNdrop button:disabled {
+    background-color: white;
+    border: 1px solid #D2D4D9;
+    border-radius: 6px;
+}
+
+.dragNdrop button.btn:disabled {
+    color: #19181B;
+    opacity: 100%;
+}
 
 
 /*
@@ -216,8 +265,9 @@ input[type=number]::-webkit-inner-spin-button {
     width: 100%;
     height: 276px;
 
-    border: 1px solid #D2D4D9;
-    border-radius: 6px;
+    background: #FFFFFF;
+    border: 1px dashed #D2D4D9;
+    border-radius: 8px;
 }
 
 /*

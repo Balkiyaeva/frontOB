@@ -1,3 +1,8 @@
+
+/*
+ -----------------------------------------------------------
+    left navigation
+ */
 .s {
     background-color: #19181B;
     padding: 30px 0px 30px 50px; /* top, right, bottom, left */
@@ -40,6 +45,38 @@
     justify-content: center;
 }
 
+.s2 {
+    padding-right: 30px;
+}
+
+.s2 p {
+    margin: unset;
+}
+
+#small_av_cont {
+    height: 48px;
+    width: 48px;
+
+    border-radius: 48px;
+
+    margin-right: 9px;
+}
+
+.inBtnAlign{
+    height: 100%;
+
+    position: absolute;
+
+    left: 3px;
+    bottom: -3px;
+}
+
+
+/*
+ -----------------------------------------------------------
+    main container
+ */
+
 .m {
 
     max-height: 100%;
@@ -63,6 +100,12 @@
 .m_width-93 {
     width: 93%;
 }
+
+/*
+ -----------------------------------------------------------
+    grid container
+ */
+
 .parent {
     max-height: 100%;
     max-width: 100%;
@@ -79,6 +122,11 @@
 
     /*zoom: 60%;*/ /*TODO */
 }
+
+/*
+ -----------------------------------------------------------
+    grid style containers
+ */
 
 .profile_container {
     background-color: white;
@@ -107,6 +155,11 @@
     min-height: 60%;
     min-width: 60%;
 }
+
+/*
+ -----------------------------------------------------------
+    grid profile_info
+ */
 
 .profile_info {
     grid-area: 1 / 1 / 4 / 4;
@@ -169,6 +222,11 @@
 
     cursor: pointer;
 }
+
+/*
+ -----------------------------------------------------------
+     grid last_objects
+ */
 
 
 .last_objects {
@@ -239,10 +297,21 @@
     padding: 0.3rem 0.4rem;
 }
 
+/*
+ -----------------------------------------------------------
+     grid graphic
+ */
+
 .graphic {
     grid-area: 1 / 4 / 5 / 6;
     justify-content: space-evenly;
 }
+
+/*
+ -----------------------------------------------------------
+     grid map
+ */
+
 .map {
     grid-area: 5 / 4 / 7 / 6;
 }
@@ -254,33 +323,6 @@
 
     height: 100%;
 }
-
-.s2 {
-    padding-right: 30px;
-}
-
-.s2 p {
-    margin: unset;
-}
-
-#small_av_cont {
-    height: 48px;
-    width: 48px;
-
-    border-radius: 48px;
-
-    margin-right: 9px;
-}
-
-.inBtnAlign{
-    height: 100%;
-
-    position: absolute;
-
-    left: 3px;
-    bottom: -3px;
-}
-
 /**/
 
 .chev-left {
@@ -324,7 +366,11 @@
     display: flex;
 }
 
-/**/
+
+/*
+ -----------------------------------------------------------
+     buttons
+ */
 
 .btn-blue {
     background-color: #3D62E3;
@@ -345,6 +391,22 @@
     border-color: #5A78E1FF;
 }
 
+.btn-red {
+    background-color: transparent;
+    border-color: #ED3A32;
+    color: #ED3A32;
+}
+
+.btn-red:hover,
+.btn-red:active,
+.btn-red:focus,
+.btn-red.active {
+    background-color: transparent;
+    border-color: #ED3A32;
+    color: #ED3A32;
+    box-shadow: 0 8px 8px rgba(0,0,0,.075);;
+}
+
 .f-btn button {
     display: inline-flex;
     flex-direction: row;
@@ -357,6 +419,11 @@
     font-style: normal;
 }
 
+/*
+ -----------------------------------------------------------
+     button library
+ */
+
 .default {
     background-color: #19181B;
     border: none;
@@ -365,7 +432,8 @@
     color: white;
 }
 
-.btn.active {
+.btn.active,
+.default:focus{
     background-color: #3B3B41;
     border: none;
     border-radius: 6px;
@@ -509,6 +577,11 @@
 
 }
 
+/*
+ -----------------------------------------------------------
+     dropdown button
+ */
+
 .dropdown-menu {
     width: 100%;
     background-color: #19181B;
@@ -519,6 +592,11 @@
     text-align: left;
     color: white;
 }
+
+/*
+ -----------------------------------------------------------
+     more-info small button
+ */
 
 .more-info {
     width: 48px;
@@ -542,33 +620,6 @@
 
     border-radius: 6px;
 }
-
-/*
-    window popup
- */
-
-.window {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(25, 24, 27, 0.5);
-
-    z-index: 3;
-
-}
-
-.window_content {
-
-    background-color: white;
-
-    border-radius: 6px;
-
-    z-index: 4;
-
-    padding: 30px;
-}
-
 
 .triangle {
     position: absolute;
@@ -604,25 +655,29 @@
     border-radius: 6px 6px 6px 0;
 }
 
-
 /*
-    house_mainInfo
+ -----------------------------------------------------------
+    window button
  */
 
-.step {
+.window {
+    position: fixed;
     width: 100%;
+    height: 100%;
+
+    background: rgba(25, 24, 27, 0.5);
+
+    z-index: 3;
 
 }
-.step-hr {
-    display: flex;
-    align-items: center;
-}
 
-.step-hr:after{
-    content: "";
-    flex-grow: 1;
-    background: #D2D4D9;
-    height: 1px;
-    font-size: 0;
-    line-height: 0;
+.window_content {
+
+    background-color: white;
+
+    border-radius: 6px;
+
+    z-index: 4;
+
+    padding: 30px;
 }
